@@ -13,10 +13,15 @@ public class Base1
 	
 	{
 		System.setProperty("webdriver.chrome.driver", "D:\\selenium\\chromedriver.exe");
+		
 		driver=new ChromeDriver();
+		
 		driver.manage().window().maximize();
+		
         driver.get("https://neostox.com/");
+        
 		Reporter.log("Launching browser",true);
+		
 		Thread.sleep(1000);
 	}
 
