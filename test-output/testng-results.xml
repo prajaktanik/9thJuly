@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
     <line>
-      <![CDATA[mytest5 is executing]]>
-    </line>
-    <line>
-      <![CDATA[Test case is failed please have a look again]]>
-    </line>
-    <line>
-      <![CDATA[test case is fail taken screenshot]]>
-    </line>
-    <line>
-      <![CDATA[mytest4 is executing]]>
-    </line>
-    <line>
-      <![CDATA[Test case is completed successfully]]>
-    </line>
-    <line>
-      <![CDATA[Test case is skipped please retry]]>
+      <![CDATA[Launching browser]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-11-28T19:25:49 IST" name="Default suite" finished-at="2022-11-28T19:25:49 IST" duration-ms="64">
+  <suite started-at="2022-12-09T13:29:43 IST" name="Default suite" finished-at="2022-12-09T13:29:51 IST" duration-ms="8217">
     <groups>
     </groups>
-    <test started-at="2022-11-28T19:25:49 IST" name="Default test" finished-at="2022-11-28T19:25:49 IST" duration-ms="64">
-      <class name="listeners.Testing2">
-        <test-method signature="mytest5()[pri:0, instance:listeners.Testing2@3ee37e5a]" started-at="2022-11-28T19:25:49 IST" name="mytest5" finished-at="2022-11-28T19:25:49 IST" duration-ms="13" status="FAIL">
-          <exception class="java.lang.AssertionError">
+    <test started-at="2022-12-09T13:29:43 IST" name="Default test" finished-at="2022-12-09T13:29:51 IST" duration-ms="8217">
+      <class name="neoTestClass.VlidateNeoStoxUserName">
+        <test-method is-config="true" signature="launchNeoStox()[pri:0, instance:neoTestClass.VlidateNeoStoxUserName@537f60bf]" started-at="2022-12-09T13:29:43 IST" name="launchNeoStox" finished-at="2022-12-09T13:29:51 IST" duration-ms="8155" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Launching browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchNeoStox -->
+        <test-method is-config="true" signature="logintoNeoStox()[pri:0, instance:neoTestClass.VlidateNeoStoxUserName@537f60bf]" started-at="2022-12-09T13:29:51 IST" name="logintoNeoStox" finished-at="2022-12-09T13:29:51 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[null]]>
+              <![CDATA[Unresolved compilation problems: 
+The method sendMobileNum(WebDriver, String) is undefined for the type Log
+The method clickOnSignInButton(WebDriver) is undefined for the type Log
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.fail(Assert.java:106)
-at listeners.Testing2.mytest5(Testing2.java:21)
+              <![CDATA[java.lang.Error: Unresolved compilation problems: 
+The method sendMobileNum(WebDriver, String) is undefined for the type Log
+The method clickOnSignInButton(WebDriver) is undefined for the type Log
+
+at neoTestClass.VlidateNeoStoxUserName.logintoNeoStox(VlidateNeoStoxUserName.java:40)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -65,37 +65,38 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
-            <line>
-              <![CDATA[mytest5 is executing]]>
-            </line>
-            <line>
-              <![CDATA[Test case is failed please have a look again]]>
-            </line>
-            <line>
-              <![CDATA[test case is fail taken screenshot]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- mytest5 -->
-        <test-method signature="mytest4()[pri:0, instance:listeners.Testing2@3ee37e5a]" started-at="2022-11-28T19:25:49 IST" name="mytest4" finished-at="2022-11-28T19:25:49 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[mytest4 is executing]]>
-            </line>
-            <line>
-              <![CDATA[Test case is completed successfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- mytest4 -->
-        <test-method signature="mytest6()[pri:0, instance:listeners.Testing2@3ee37e5a]" started-at="2022-11-28T19:25:49 IST" name="mytest6" finished-at="2022-11-28T19:25:49 IST" depends-on-methods="listeners.Testing2.mytest5" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
+        </test-method> <!-- logintoNeoStox -->
+        <test-method signature="validateUserID()[pri:0, instance:neoTestClass.VlidateNeoStoxUserName@537f60bf]" started-at="2022-12-09T13:29:51 IST" name="validateUserID" finished-at="2022-12-09T13:29:51 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[Method Testing2.mytest6()[pri:0, instance:listeners.Testing2@3ee37e5a] depends on not successfully finished methods]]>
+              <![CDATA[Unresolved compilation problems: 
+The method sendMobileNum(WebDriver, String) is undefined for the type Log
+The method clickOnSignInButton(WebDriver) is undefined for the type Log
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Testing2.mytest6()[pri:0, instance:listeners.Testing2@3ee37e5a] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+              <![CDATA[java.lang.Error: Unresolved compilation problems: 
+The method sendMobileNum(WebDriver, String) is undefined for the type Log
+The method clickOnSignInButton(WebDriver) is undefined for the type Log
+
+at neoTestClass.VlidateNeoStoxUserName.logintoNeoStox(VlidateNeoStoxUserName.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
@@ -116,14 +117,19 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
-            <line>
-              <![CDATA[Test case is skipped please retry]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- mytest6 -->
-      </class> <!-- listeners.Testing2 -->
+        </test-method> <!-- validateUserID -->
+        <test-method is-config="true" signature="logOutFromNeoStox()[pri:0, instance:neoTestClass.VlidateNeoStoxUserName@537f60bf]" started-at="2022-12-09T13:29:51 IST" name="logOutFromNeoStox" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1670572791289" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromNeoStox -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:neoTestClass.VlidateNeoStoxUserName@537f60bf]" started-at="2022-12-09T13:29:51 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1670572791289" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- neoTestClass.VlidateNeoStoxUserName -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

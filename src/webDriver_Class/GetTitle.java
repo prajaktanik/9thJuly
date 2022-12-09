@@ -15,7 +15,7 @@ public class GetTitle {
 		 
 		 driver.get("https://vctcpune.com/");
 		 
-		 System.out.println( driver.getTitle());
+		// System.out.println( driver.getTitle());
 		 
 		 String myTitle = driver.getTitle();
 		 System.out.println("title of wepage "+myTitle);

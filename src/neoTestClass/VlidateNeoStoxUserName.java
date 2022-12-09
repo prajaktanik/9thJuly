@@ -37,7 +37,8 @@ home= new NeoStoxHomePage(driver);
 public void logintoNeoStox() throws EncryptedDocumentException, IOException, 
 InterruptedException
 {
-Log.sendMobileNum(driver, Utility.readDataFromExcel(4, 0));
+Log.sendMobileNum(driver, Utility.readDataFromExcel(6, 0));
+Object Webdriver;
 Log.clickOnSignInButton(driver);
 Utility.wait(driver, 1000);
 password.enterpassword(driver, Utility.readDataFromExcel(4, 1));
@@ -50,7 +51,7 @@ home.handlePopUp(driver);
  public void validateUserID() throws EncryptedDocumentException, IOException
 {
 Assert.assertEquals(home.getActualUserName(driver), 
-Utility.readDataFromExcel(4, 2),"TC is failed Actual and expected User Name are not matching");
+Utility.readDataFromExcel(6, 1),"TC is failed Actual and expected User Name are not matching");
 Utility.screenshot(driver, home.getActualUserName(driver));
 }
 @AfterMethod
