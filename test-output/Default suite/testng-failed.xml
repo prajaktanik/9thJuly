@@ -3,12 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="listeners.Testing2">
+      <class name="neoTestClass.VlidateNeoStoxUserName">
         <methods>
-          <include name="mytest6"/>
-          <include name="mytest5"/>
+          <include name="launchNeoStox"/>
+          <include name="validateUserID"/>
+          <include name="logintoNeoStox"/>
+          <include name="logOutFromNeoStox"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- listeners.Testing2 -->
+      </class> <!-- neoTestClass.VlidateNeoStoxUserName -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

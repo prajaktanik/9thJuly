@@ -9,20 +9,25 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">64</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">8,217</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">listeners.Testing2</td><td><a href="#m0">mytest5</a></td><td rowspan="1">1669643749333</td><td rowspan="1">13</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">listeners.Testing2</td><td><a href="#m1">mytest6</a></td><td rowspan="1">1669643749361</td><td rowspan="1">0</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">listeners.Testing2</td><td><a href="#m2">mytest4</a></td><td rowspan="1">1669643749356</td><td rowspan="1">1</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">neoTestClass.VlidateNeoStoxUserName</td><td><a href="#m0">logintoNeoStox</a></td><td rowspan="1">1670572791285</td><td rowspan="1">0</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">neoTestClass.VlidateNeoStoxUserName</td><td><a href="#m1">closeBrowser</a></td><td rowspan="1">1670572791289</td><td rowspan="1">-1670572791289</td></tr><tr class="skippedeven"><td><a href="#m2">logOutFromNeoStox</a></td><td rowspan="1">1670572791289</td><td rowspan="1">-1670572791289</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">neoTestClass.VlidateNeoStoxUserName</td><td><a href="#m3">validateUserID</a></td><td rowspan="1">1670572791289</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">listeners.Testing2#mytest5</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">mytest5 is executing<br/>Test case is failed please have a look again<br/>test case is fail taken screenshot</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.fail(Assert.java:106)
-	at listeners.Testing2.mytest5(Testing2.java:21)
+<h2>Default test</h2><h3 id="m0">neoTestClass.VlidateNeoStoxUserName#logintoNeoStox</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Error: Unresolved compilation problems: 
+	The method sendMobileNum(WebDriver, String) is undefined for the type Log
+	The method clickOnSignInButton(WebDriver) is undefined for the type Log
+
+	at neoTestClass.VlidateNeoStoxUserName.logintoNeoStox(VlidateNeoStoxUserName.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -46,8 +51,27 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">listeners.Testing2#mytest6</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test case is skipped please retry</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method Testing2.mytest6()[pri:0, instance:listeners.Testing2@3ee37e5a] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+<h3 id="m1">neoTestClass.VlidateNeoStoxUserName#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">neoTestClass.VlidateNeoStoxUserName#logOutFromNeoStox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">neoTestClass.VlidateNeoStoxUserName#validateUserID</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Error: Unresolved compilation problems: 
+	The method sendMobileNum(WebDriver, String) is undefined for the type Log
+	The method clickOnSignInButton(WebDriver) is undefined for the type Log
+
+	at neoTestClass.VlidateNeoStoxUserName.logintoNeoStox(VlidateNeoStoxUserName.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
@@ -67,6 +91,5 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">listeners.Testing2#mytest4</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">mytest4 is executing<br/>Test case is completed successfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

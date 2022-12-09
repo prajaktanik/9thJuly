@@ -30,7 +30,7 @@ System.setProperty("webdriver.chrome.driver", "D:\\selenium\\chromedriver.exe");
 		NeoStoxPasswordPage PWD=new NeoStoxPasswordPage(driver);
 		PWD.enterpassword(driver, null);
 		//driver.manage().timeouts().implicitlyWait(Duration.ofMillis(90000000));
-		PWD.ClickonSubmitButton();
+		PWD.ClickonSubmitButton(driver);
 		
 		NeoStoxHomePage OkCloseButton=new NeoStoxHomePage(driver);
 		OkCloseButton.ClickOnOkButton();

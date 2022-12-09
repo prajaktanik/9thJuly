@@ -38,6 +38,10 @@ public class Utility {
 }
 	public static void screenshot(WebDriver driver, String string) throws IOException
 	{   wait(driver,500);
+	    wait(driver,500);
+	    wait(driver,500);
+	  
+	    
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	    File dest = new File("D:\\selenium\\screenshot\\"+string+".png");
 		FileHandler.copy(src, dest);
@@ -46,6 +50,7 @@ public class Utility {
 	public static void ScrollingIntoView(WebDriver driver,WebElement element)
 
 	{           wait(driver,500);
+	            wait(driver,500);
 	            JavascriptExecutor js = (JavascriptExecutor)driver;
 		
 	            js.executeScript("arguments[0].scrollIntoView(true)", element);

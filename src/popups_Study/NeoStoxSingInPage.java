@@ -1,4 +1,4 @@
-package neostoxPOM;
+package popups_Study;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,9 +25,7 @@ public void clickOnsingInbutton(WebDriver driver)
 	Reporter.log("Clicking in Singin button");
 	SingInBUtton.click();
 }
- void clicksingInbutton() {
-	// TODO Auto-generated method stub
-	
+ 
 }
 
 
